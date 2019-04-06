@@ -2,11 +2,13 @@ package pw.obi;
 
 public class Passenger {
 
+	private String name;
 	private String id;
 	
-	public Passenger(String id)
+	public Passenger(String name, String id)
 	{
-		this.id = id;			
+		this.id = id;	
+		this.name = name;
 	}
 	
 	public void changeId(String newId)
@@ -16,8 +18,11 @@ public class Passenger {
 	
 	public String getName()
 	{
-		return id;			
+		return name;			
 	}
 	
-	
+	public String getID()
+	{
+		return id;			
+	}
 }
